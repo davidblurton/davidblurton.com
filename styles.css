@@ -1,0 +1,38 @@
+html, body {
+  height: 100%;
+}
+
+main {
+  margin: 0 20px;
+}
+
+h1 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #111;
+
+  letter-spacing: -1px;
+}
+
+a {
+  color: #d14;
+  text-decoration: none;
+  border-bottom: 3px solid #d14;
+}
+
+a:hover {
+  background-color: #d14;
+  color: #fff;
+
+}
+
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform:translateY(-50%);
+     -moz-transform:translateY(-50%);
+      -ms-transform:translateY(-50%);
+       -o-transform:translateY(-50%);
+          transform:translateY(-50%);
+}
