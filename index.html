@@ -4,7 +4,48 @@
         <meta charset="utf-8">
         <meta name="description" content="I'm a web developer living in Cambridge, UK.">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-        <link rel="stylesheet" href="styles.css">
+        <style type="text/css">
+        html, body {
+          margin: 10px;
+        }
+
+        h1 {
+          font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+          font-weight: 900;
+          font-size: 28px;
+          color: #111;
+
+          letter-spacing: -1px;
+        }
+
+        a {
+          color: #d14;
+          text-decoration: none;
+          border-bottom: 3px solid #d14;
+        }
+
+        a:hover {
+          background-color: #d14;
+          color: #fff;
+        }
+
+        @media only screen
+        and (min-width : 1224px) {
+          main {
+            width: 90%;
+            margin: auto;
+            position: absolute;
+            top: 50%; left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                    transform: translate(-50%,-50%);
+          }
+
+          h1 {
+            font-size: 36px;
+          }
+        }
+        </style>
         <title>David Blurton | web developer</title>
     </head>
     <body>
