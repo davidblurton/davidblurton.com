@@ -71,6 +71,12 @@
           color: #fff;
         }
 
+        a[href^="tel:"]:before {
+          content: "\260e";
+          margin-right: 0.5em;
+          font-style: normal;
+        }
+
         @media print, screen and (min-width: 768px) {
           header {
             display: flex;
@@ -82,6 +88,13 @@
             text-align: right;
           }
         }
+
+        @media print {
+          a {
+            color: #030303;
+            border-bottom: 0;
+          }
+        }
         </style>
         <title>David Blurton | resumé</title>
     </head>
@@ -91,8 +104,8 @@
 
         <h4>
           Kvisthagi 25, 107 Reykjavík<br />
-          +(354) 786 7902<br />
-          david.blurton@gmail.com<br />
+          <a href="tel:354-786-7902">+(354) 786 7902</a><br />
+          <a href="mailto:david.blurton@gmail.com">david.blurton@gmail.com</a><br />
         </h4>
 
         <h3>Experience</h3>
@@ -112,10 +125,11 @@
 
         <p>Building web applications for clients such as Google, Facebook, Nest, Landsbankinn and many more.</p>
         <ul>
-          <li>Nest store site for the launch of Nest Cam (store.nest.com)</li>
-          <li>Redesign of Android developer site (developer.android.com)</li>
-          Responsive web games for Google's Santa Tracker which are played by millions of people worldwide (santatracker.google.com)</li>
-          <li>Facebook for business events site</li>
+          <li>Nest store site for the launch of Nest Cam (<a href="https://store.nest.com/">store.nest.com</a>)</li>
+          <li>Redesign of Android developer site (<a href="https://developer.android.com/">developer.android.com</a>)</li>
+          <li>Responsive web games for Google's Santa Tracker which are played by millions of people worldwide (<a href="https://santatracker.google.com">santatracker.google.com</a>)</li>
+          <li>Games for Landsbankinn's Sprotarnir (<a href="http://sprotarnir.is/">sprotarnir.is</a>)</li>
+          <li>Facebook for Business events site</li>
         </ul>
 
         <header>
